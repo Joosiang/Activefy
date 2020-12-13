@@ -27,7 +27,7 @@ Rewards Station
 
 ## Features that was not added
 
-Able to delete "Upcoming Activity" , "Past Activities"
+Adding of delete button for "Upcoming Activity" , "Past Activities"
 
 Adding an Activity
 - Show calories burned and points rewarded in the screen itself
