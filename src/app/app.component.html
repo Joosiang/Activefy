@@ -1,0 +1,39 @@
+<ion-app>
+  <ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle autoHide="true">
+          <ion-item routerLink="/home">
+            Home
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle autoHide="true">
+          <ion-item routerLink="/upcoming-activities">
+            Upcoming Activity
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle autoHide="true">
+          <ion-item routerLink="/past-activities">
+            Past Activity
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle autoHide="true">
+          <ion-item routerLink="/profile">
+            Profile
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle autoHide="true">
+          <ion-item routerLink="/rewards">
+            Redeem
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

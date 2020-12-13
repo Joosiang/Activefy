@@ -1,0 +1,52 @@
+.upcoming-activites-link {
+  text-decoration: underline;
+  color: #808080;
+}
+
+ion-button {
+  --background: #ffffff;
+  color: #f37e46;
+  font-weight: bold;
+}
+
+ion-content {
+  --background: #f2f4f9;
+}
+
+ion-row {
+  justify-content: center;
+}
+
+ion-footer {
+  align-content: center;
+  text-align: center;
+  background: #f37e46;
+  color: #f2f4f9;
+  border-radius: 25px;
+}
+
+.list-activity-cards {
+  height: 100%;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+.activity-card {
+  display: inline-block;
+  border-radius: 4px;
+  width: 160px;
+  height: 300px;
+  line-height: 60px;
+}
+
+ion-img{
+  height:82px;
+  width:96px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.edit-icon{
+  margin-left: 80%;
+}

@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first"></ion-menu-button>
+    </ion-buttons>
+    <ion-title slot="">
+      ACTIVEFY
+    </ion-title>
+    <ion-avatar slot="end" routerLink="/profile">
+      <img src="assets/profile.jpeg" />
+    </ion-avatar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+          <div class="list-activity-cards">
+            <div class="activity-card" *ngFor="let item of activities">
+              <ion-card>
+                <ion-row routerLink='/edit-activity/{{item.split(",./")[4]}}'>
+                  <img class="edit-icon" src="assets/edit.svg">
+                </ion-row>
+                <ion-card-content>
+                  <ion-img [src]='"assets/"+item.split(",./")[1]+".svg"'></ion-img>
+                  <ion-card-title>
+                    {{item.split(",./")[0]}}
+                  </ion-card-title>
+                  <ion-card-content>{{item.split(",./")[2]}}</ion-card-content>
+                </ion-card-content>
+              </ion-card>
+            </div>
+          </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-label class="upcoming-activites-link" routerLink="/upcoming-activities">View all upcoming activities
+      </ion-label>
+    </ion-row>
+    <ion-row>
+      <ion-button routerLink="/new-activity">
+        Add New Activity
+      </ion-button>
+    </ion-row>
+    <ion-footer class="bar bar-footer bar-assertive">
+      {{this.points}} total points earned<br />
+      <ion-button routerLink="/rewards">
+        Redeem
+      </ion-button>
+    </ion-footer>
+  </ion-grid>
+</ion-content>

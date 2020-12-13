@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Edit Activity</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-input placeholder="Enter Activity Title" [(ngModel)]="Title"></ion-input>
+  <ion-select placeholder="Activity Type" [(ngModel)]="Type">
+    <ion-select-option value="bench-press">Bench Press</ion-select-option>
+    <ion-select-option value="boxing">Boxing</ion-select-option>
+    <ion-select-option value="walking">Walking</ion-select-option>
+    <ion-select-option value="running">Running</ion-select-option>
+  </ion-select>
+  <ion-input placeholder="Enter Duration/ Sets & Reps" [(ngModel)]="Frequency"></ion-input>
+  <ion-datetime name="date" done-text="Done" placeholder="Date" pickerFormat="DD MMM YYYY HH:mm" displayFormat="DD MMM YYYY HH:mm"
+    monthNames="Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec" [(ngModel)]="Datetime">
+  </ion-datetime>
+  <ion-checkbox></ion-checkbox>
+  <ion-label>Set a reminder for the activity</ion-label>
+  <ion-row>
+    <ion-label style="color:#F37E46">Final Results</ion-label>
+  </ion-row>
+  <ion-row>
+    <ion-label>potential kcal</ion-label>
+  </ion-row>
+  <ion-row>
+    <ion-label>points earned</ion-label>
+  </ion-row>
+  <ion-footer>
+    <ion-button (click)="saveData()">
+      Edit Activity
+    </ion-button>
+  </ion-footer>
+</ion-content>

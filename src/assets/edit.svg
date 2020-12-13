@@ -1,0 +1,7 @@
+<svg id="btn_icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <circle id="Ellipse_4" data-name="Ellipse 4" cx="12" cy="12" r="12" fill="#f5e99b"/>
+  <g id="icon_edit" transform="translate(6 6)">
+    <path id="Path_153" data-name="Path 153" d="M1.61,8.786.9,11.852a.77.77,0,0,0,.746.935.8.8,0,0,0,.16,0l3.079-.711,5.91-5.9-3.3-3.3Z" transform="translate(-0.884 -0.791)" fill="#f37e46"/>
+    <path id="Path_154" data-name="Path 154" d="M12.961,3.139,10.76.933a.771.771,0,0,0-1.09,0L8.447,2.159l3.295,3.3,1.224-1.227a.775.775,0,0,0,0-1.1Z" transform="translate(-1.19 -0.707)" fill="#f37e46"/>
+  </g>
+</svg>

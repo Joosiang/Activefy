@@ -1,0 +1,43 @@
+ion-content{
+      justify-content: center;
+        --background: #F2F4F9;
+      text-align: center;
+      }
+  
+  ion-row{
+    margin: auto;
+    width: 70%;
+  }
+  
+  ion-footer{
+    align-content: center;
+    text-align: center;
+  }
+
+  ion-button{
+    --background: #FFFFFF;
+    color: #F37E46;
+    font-weight: bold;
+  }
+
+  ion-input{
+    background-color: #FFFFFF;
+    width:70%;
+    color:#C7CFD7;
+    margin: auto;
+}
+ion-select{
+    background-color: #FFFFFF;
+    width:70%;
+    color:#C7CFD7;
+    margin: auto;
+}
+ion-datetime{
+    background-color: #FFFFFF;
+    width:70%;
+    color:#C7CFD7;
+    margin: auto;
+}
+ion-label{
+color: #808080;
+}

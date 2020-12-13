@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Reward Station</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-img src="assets/throphy.svg"></ion-img>
+  </ion-row>
+  <ion-row>
+    <ion-label style="color:#F37E46">{{this.points}} Total Points</ion-label>
+  </ion-row>
+  <ion-row>
+    <table class="rewards-table">
+        <tr>
+          <td rowspan="2">
+            <ion-img class="rewards-thumbnail" src="assets/starbucks.png"></ion-img>
+          </td>
+          <td>
+            <ion-label>Starbucks</ion-label>
+          </td>
+          <td rowspan="3">
+            <div *ngIf="this.points>=120">
+            <ion-button (click)=redeem(120) routerLink="/redemption">Redeem</ion-button>
+            </div>
+            <div *ngIf="this.points<120">
+            <ion-button disabled>Redeem</ion-button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <ion-label class="desc">25% discount</ion-label>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">
+            <ion-label class="points">120</ion-label>
+          </td>
+        </tr>
+    </table>
+  </ion-row>
+</ion-content>

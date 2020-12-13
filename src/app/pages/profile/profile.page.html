@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="text-align: center;">
+  <img style="padding-left: auto;padding-right: auto; border-radius: 100%;" src="assets/profile.jpeg"><br>
+  <ion-label class="username">{{this.User}}</ion-label><br>
+  <ion-label class="details">BMI = {{this.BMI}}</ion-label><br>
+  <ion-label class="details">{{this.Height}} cm</ion-label><br>
+  <ion-label class="details">{{this.Weight}} kg</ion-label><br>
+  <ion-label class="details">{{this.Age}} years old</ion-label><br>
+  <ion-button routerLink="/edit-profile">Edit</ion-button>
+</ion-content>

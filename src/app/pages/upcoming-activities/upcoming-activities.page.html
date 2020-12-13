@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Upcoming Activities</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <div *ngFor="let item of activities">
+      <ion-card>
+        <ion-card-content>
+          <table>
+            <tr>
+              <td rowspan="2">
+                <ion-label style="font-size: small">{{item.split(",./")[3].substring(0,10)}}</ion-label><br>
+                <ion-label style="font-size: small">{{item.split(",./")[3].substring(11,19)}}</ion-label>
+              </td>
+              <td rowspan="2">
+              <ion-img [src]='"assets/"+item.split(",./")[1]+".svg"'></ion-img>
+              </td>
+              <td>
+                <ion-label>
+                  {{item.split(",./")[0]}}
+                </ion-label>
+              </td>
+              <td rowspan="2">
+                <ion-label routerLink='/edit-activity/{{item.split(",./")[4]}}'>
+                  <img class="edit-icon" src="assets/edit.svg">
+                </ion-label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <ion-label>
+                  <div [ngSwitch]='item.split(",./")[1]'>
+                    <div *ngSwitchCase="'walking'">
+                      {{item.split(",./")[2]}} - 8 points</div>
+                    <div *ngSwitchCase="'running'">
+                      {{item.split(",./")[2]}} - 10 points</div>
+                    <div *ngSwitchCase="'boxing'">
+                      {{item.split(",./")[2]}} - 11 points</div>
+                    <div *ngSwitchCase="'bench-press'">
+                      {{item.split(",./")[2]}} - 12 points</div>
+                  </div>
+                </ion-label>
+              </td>
+            </tr>
+          </table>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

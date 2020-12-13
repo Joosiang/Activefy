@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Edit Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img style="padding-left: auto;padding-right: auto; border-radius: 100%;" src="assets/profile.jpeg"><br>
+  <ion-input placeholder="User Name" [(ngModel)]="User"></ion-input>
+  <ion-input placeholder="BMI" [(ngModel)]="BMI"></ion-input>
+  <ion-input placeholder="Height" [(ngModel)]="Height"></ion-input>
+  <ion-input placeholder="Weight" [(ngModel)]="Weight"></ion-input>
+  <ion-input placeholder="Age" [(ngModel)]="Age"></ion-input>
+  <ion-button (click)="saveData()">Save</ion-button>
+</ion-content>
+

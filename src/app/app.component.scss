@@ -1,0 +1,19 @@
+ion-title{
+    text-align: left;
+}
+ion-item{
+    color:#808080;
+    font-weight: bold;
+    text-align: center;
+}
+ion-item .active{
+    background-color: #C7CFD7;
+    color:#FF8000;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+ion-content{
+    --background:#F2F4F9;
+}
