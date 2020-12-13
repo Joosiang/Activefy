@@ -91,6 +91,11 @@ https://ionicframework.com/docs/angular/storage
 3) Type cd Activefy
 4) After that, type ionic serve
 
+Some additional commands if it does not work
+
+- ionic cordova plugin add cordova-sqlite-storage
+- npm install --save @ionic/storage
+
 
 
 
