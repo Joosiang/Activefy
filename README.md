@@ -4,7 +4,7 @@ The project is about a physical activity tracker app where the user can add,edit
  
 ## Design Process
 
-The design is minimalistic The app is targeted for teenagers and adults who wishes to do some simple physical activity such as walking while they are on the way to work/school. 
+The design of the app is minimalistic as it enhances the app nagivation for the user. The app is targeted for teenagers and adults who wishes to do some simple physical activity such as walking while they are on the way to work/school. 
 
 ## Features
 
