@@ -53,13 +53,15 @@ Rewards Station
     4. Click on the side menu bar and click "Upcoming Activities" the activity should also be added there
 
 2. Editing An Activity
-    1. Click side menu bar and click "Upcoming Acit
+    1. Click side menu bar and click "Upcoming Activity"
+    2. Click the "pencil icon" and an "Edit Activity" page should appears
+    3. Change the details and see if the changes are shown in "Upcoming Activity"
 
-
-Github
-
-- Was unable to upload to github due to error, I tried the git config email and username and yet it
-still doesn't work. It worked after awhile..
+3. Redeem a voucher
+    1. Click on "Redeem" in Home page
+    2. It should bring the user to "Reward Station"
+    3. Click on the "Redeem" button beside the starbucks icon
+    4. Bring the user to a "Thank you" page and shows the remaining points left
 
 ## Credits
 https://ionicframework.com/docs/components
@@ -67,6 +69,8 @@ https://ionicframework.com/docs/components
 https://angular.io/guide/lazy-loading-ngmodules
 
 https://ionicframework.com/docs/angular/navigation
+
+https://ionicframework.com/docs/angular/storage
 
 https://dribbble.com/shots/9990122-Activity-app
 
